@@ -9,7 +9,7 @@ streamlit==0.81.1
 matplotlib==3.4.2
 pandas==1.2.4
 opencv_python==4.5.2.52
-absl==0.0
+
 apache_beam==2.29.0
 ipython==7.24.0
 lvis==0.5.3
