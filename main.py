@@ -44,7 +44,7 @@ def detect_objects(our_image):
     PATH_TO_CKPT = hf1
 
     # List of the strings that is used to add correct label for each box.
-    https://github.com/AlanRSET/mSSD/releases/download/SSD/label_map.pbtxt
+    
     url2 = 'https://github.com/AlanRSET/mSSD/releases/download/SSD/label_map.pbtxt'
     hf2 = url2.split('/')[-1]
 
