@@ -19,3 +19,4 @@ Pillow==8.2.0
 protobuf==3.17.1
 pycocotools==2.0.2
 tf_slim==1.1.0
+tensorflow-object-detection-api==0.1.1
