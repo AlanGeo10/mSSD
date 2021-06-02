@@ -34,10 +34,23 @@ def detect_objects(our_image):
     col1.pyplot(use_column_width=True)
 
     # SSD ALGORITHM
-    PATH_TO_CKPT = "frozen_inference_graph.pb"
+    
+    import urllib.request
+
+    url1 = 'https://github.com/AlanRSET/mSSD/releases/download/SSD/frozen_inference_graph.pb'
+    hf1 = url1.split('/')[-1]
+
+    urllib.request.urlretrieve(url1, hf1)
+    PATH_TO_CKPT = hf1
 
     # List of the strings that is used to add correct label for each box.
-    PATH_TO_LABELS = "label_map.pbtxt"
+    https://github.com/AlanRSET/mSSD/releases/download/SSD/label_map.pbtxt
+    url2 = 'https://github.com/AlanRSET/mSSD/releases/download/SSD/label_map.pbtxt'
+    hf2 = url2.split('/')[-1]
+
+    urllib.request.urlretrieve(url2, hf2)
+    
+    PATH_TO_LABELS = hf2
 
     NUM_CLASSES = 6
 
