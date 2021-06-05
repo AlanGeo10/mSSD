@@ -156,8 +156,10 @@ def detect_objects(our_image):
       st.success("Pathology identified: NORMAL LUNG")
     elif(final_class[0]==3 and final_class[1]==4):
       st.success("Pathology identified: CONSOLIDATION")
+      st.write("Lung consolidation occurs when the air that usually fills the small airways in your lungs is replaced with something else.")
     elif(final_class[0]==3 and final_class[1]==6):
       st.success("Pathology identified: PLEURAL EFFUSION")
+      st.write("Pleural Effusion is an excessive buildup of fluid in the space between your lungs and chest cavity.")
     else:
       st.success("Pathology identified: ERROR")
 
@@ -170,7 +172,7 @@ def object_main():
     """SSD"""
 
     st.title("M-mode SSD")
-    st.write("Something about SSD")
+    st.write("SSD takes only one shot to detect multiple objects present in an image using multibox. It is significantly faster in speed and high-accuracy object detection algorithm. SSD has a base VGG-16 network followed by multibox conv layers")
 
     #choice = st.radio("", ("Show Demo", "Browse an Image"))
     #st.write()
